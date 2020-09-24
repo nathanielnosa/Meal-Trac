@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Pattern With Tracalories</title>
+  <link rel="stylesheet" href="bootstrap-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font6/css/all.css">
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand navbar-dark bg-success">
+    <a href="#" class="navbar-brand"><strong> My Tracalories</strong><em> App</em></a>
+
+    <a href="#" class="btn btn-outline-info bg-light" id="clear-btn">Clear</a>
+  </nav>
+  <!-- nav end -->
+  <div class="container">
+    <div class="card mt-3">
+      <div class="card-body">
+        <form action="#" role="form">
+          <h4 align='center'>Add Meal/Calories</h4>
+          <div class="form-group row">
+            <div class="col">
+              <label for="text-name">Meal</label>
+              <input type="text" class="form-control" id="text-meal">
+            </div>
+            <div class="col">
+              <label for="text-calories">Calories</label>
+              <input type="number" class="form-control" id="text-calories">
+            </div>
+          </div>
+          <button class="btn btn-primary" id="add-btn"><i class="fa fa-plus"></i> Add Item</button>
+
+          <button class="btn btn-success" id="update-btn"><i class="fa fa-pencil-alt"></i> Update Item</button>
+
+          <button class="btn btn-danger" id="delete-btn"><i class="fa fa-trash"></i> Delete Item</button>
+
+          <button class="btn btn-dark" id="back-btn"><i class="fa fa-chevron-circle-left"></i> Back</button>
+        </form>
+      </div>
+    </div>
+      <h4 align='center'>Total Calories: <span id="total-calories">0</span></h4>
+
+      <ul class="list-group" id="item-list">
+        
+        <!-- <li class="list-group-item" id="item-0">
+          <strong>Bread: </strong><em>200 Calories</em>
+          <a href="#" style='float:right;'><i class="edit-item fa fa-pencil-alt"></i></a>
+        </li>
+        <li class="list-group-item" id="item-0">
+          <strong>Beans: </strong><em>600 Calories</em>
+          <a href="#" style='float:right;'><i class="edit-item fa fa-pencil-alt"></i></a>
+        </li>
+        <li class="list-group-item" id="item-0">
+          <strong>Rice: </strong><em>3000 Calories</em>
+          <a href="#" style='float:right;'><i class="edit-item fa fa-pencil-alt"></i></a>
+        </li> -->
+
+      </ul>
+  </div>
+
+
+
+  <!-- script -->
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="bootstrap-dist/js/bootstrap.min.js"></script>
+  <script src="mealcalo.js"></script>
+</body>
+</html>
